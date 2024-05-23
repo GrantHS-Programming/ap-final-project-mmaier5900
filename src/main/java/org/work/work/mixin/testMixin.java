@@ -7,6 +7,7 @@ import net.minecraft.client.network.message.MessageHandler;
 import net.minecraft.network.message.MessageType;
 import net.minecraft.network.message.SignedMessage;
 import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableTextContent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -42,6 +43,7 @@ public class testMixin {
         SignedMessage thing = new SignedMessage(message.link(), message.signature(), message.signedBody(), message.unsignedContent(), message.filterMask());
         assert message.unsignedContent() != null;
         System.out.println(sender.getName());
+
         handleMessage.handleMessage(message, sender, params);
 
         //info.cancel();
@@ -79,3 +81,4 @@ public class testMixin {
 
 
 }
+
