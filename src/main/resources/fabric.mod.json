@@ -1,30 +1,42 @@
 {
-  "schemaVersion": 1,
-  "id": "work",
-  "version": "${version}",
-  "name": "work",
-  "description": "",
-  "authors": [],
+  "authors": [
+    "Max Maier"
+  ],
   "contact": {
-    "repo": "https://github.com/mmaier5900/work"
+    "repo": "https://github.com/GrantHS-Programming/ap-final-project-mmaier5900"
   },
-  "license": "All-Rights-Reserved",
-  "icon": "assets/work/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "client": [
-      "org.work.work.client.WorkClient"
-    ],
-    "main": [
-      "org.work.work.Work"
-    ]
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.source": "https://github.com/GrantHS-Programming/ap-final-project-mmaier5900"
+      }
+    }
   },
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
   },
+  "description": "minecraft chat tomfoolery",
+  "entrypoints": {
+    "client": [
+      "org.work.work.client.WorkClient"
+    ],
+    "main": [
+      "org.work.work.Work"
+    ],
+    "modmenu": [
+      "com.example.mod.ExampleModMenuApiImpl"
+    ]
+  },
+  "environment": "*",
+  "icon": "assets/work/modicon.png",
+  "id": "work",
+  "license": "All-Rights-Reserved",
   "mixins": [
     "work.mixins.json"
-  ]
+  ],
+  "name": "work",
+  "schemaVersion": 1,
+  "version": "${version}"
 }
