@@ -8,13 +8,15 @@ import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 public class Work implements ModInitializer {
-    /**
-     * Runs the mod initializer.
-     */
+
+    // * Runs the mod initializer.
+
     public static final testItem CUSTOM_ITEM = new testItem(new Item.Settings());
 
     @Override
     public void onInitialize() {
         Registry.register(Registries.ITEM, new Identifier("tutorial", "custom_item"), CUSTOM_ITEM);
     }
+
+
 }

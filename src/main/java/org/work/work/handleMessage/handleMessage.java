@@ -20,7 +20,7 @@ public class handleMessage {
 
     public static void handleMessage(SignedMessage message, GameProfile sender, MessageType.Parameters params) {
 
-        //sendClientChat(params.applyChatDecoration(message.getContent()));
+        sendClientChat(params.applyChatDecoration(message.getContent()));
         //System.out.println(message.getContent());
         //System.out.println(params.applyChatDecoration(message.getContent()));
         //System.out.println(params.applyChatDecoration(message.getContent()).getContent().getType());
@@ -29,8 +29,8 @@ public class handleMessage {
        /// //System.out.println(params.applyChatDecoration(message.getContent()).getContent().toString());
        // Object TranslatableTextContent = new Object();
 
-        System.out.println(Arrays.toString(params.applyChatDecoration(message.getContent()).getContent().getClass().getFields()));
-        System.out.println(params.applyChatDecoration(message.getContent()).getContent());
+        //System.out.println(Arrays.toString(params.applyChatDecoration(message.getContent()).getContent().getClass().getFields()));
+        //System.out.println(params.applyChatDecoration(message.getContent()).getContent());
       //  System.out.println(params.applyChatDecoration(message.getContent()).getStyle());
     }
     public static void handleMessage(Text message, MessageType.Parameters params) {
