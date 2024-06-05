@@ -16,7 +16,7 @@ public class Work implements ModInitializer {
     // * Runs the mod initializer.
 
     public static final testItem CUSTOM_ITEM = new testItem(new Item.Settings());
-    public static final Block DOT_BLOCK = new Block(AbstractBlock.Settings.create().strength(4.0f).requiresTool());
+    public static final firstBlock DOT_BLOCK = new firstBlock(AbstractBlock.Settings.create().strength(4.0f).requiresTool());
 
     @Override
     public void onInitialize() {

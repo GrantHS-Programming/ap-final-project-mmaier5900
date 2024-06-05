@@ -39,12 +39,12 @@ public class handleMessage {
     }
 
     public static void sendClientChat(String message) {
-        if (MinecraftClient.getInstance().player != null) {
+        if (MinecraftClient.getInstance().player != null && !message.contains("Summzund")) {
             MinecraftClient.getInstance().player.sendMessage(Text.literal(message));
         }
     }
     public static void sendClientChat(Text message) {
-        if (MinecraftClient.getInstance().player != null) {
+        if (MinecraftClient.getInstance().player != null && !message.contains(Text.of("Summzund"))) {
             MinecraftClient.getInstance().player.sendMessage(message);
         }
     }
