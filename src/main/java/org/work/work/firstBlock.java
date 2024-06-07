@@ -25,6 +25,6 @@ public class firstBlock extends Block {
             ServerCommandSource commandSource = player.getServer().getCommandSource();
             commandManager.executeWithPrefix(commandSource, "summon tnt " + (pos.getX()) + " " + pos.getY() + " " + pos.getZ());
         }
-        return;
+
     }
 }
