@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:the_end",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:plains",
+      "layers": [
+        {
+          "block": "minecraft:dirt",
+          "height": 1
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}
+
