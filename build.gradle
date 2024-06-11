@@ -19,7 +19,7 @@ repositories {
 
     maven { url "https://maven.shedaniel.me/" }
     maven {
-        url = "https://maven.kyrptonaught.dev"
+        url "https://maven.kyrptonaught.dev"
     }
 
 
