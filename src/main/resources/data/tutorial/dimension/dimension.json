@@ -1,11 +1,24 @@
 {
   "type": "minecraft:overworld",
   "generator": {
-    "type": "minecraft:flat",
-    "settings": {
-      "layers": [],
-      "structure_overrides": "minecraft:igloos"
+    "type": "minecraft:noise",
+    "settings": "minecraft:floating_islands",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:badlands",
+          "parameters": {
+            "temperature": -2,
+            "humidity": -2,
+            "continentalness": -2,
+            "erosion": -2,
+            "weirdness": -2,
+            "depth": -2,
+            "offset": 1
+          }
+        }
+      ]
     }
   }
 }
-

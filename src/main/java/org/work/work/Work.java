@@ -30,6 +30,14 @@ public class Work implements ModInitializer {
                 .tintColor(234, 183, 8)
                 .registerPortal();
 
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(Blocks.BLACK_TERRACOTTA)
+                .lightWithItem(Items.SADDLE)
+                //.lightWithFluid(Fluids.WATER)
+                .destDimID(new Identifier("tutorial", "dimension"))
+                .tintColor(138, 78, 78)
+                .registerPortal();
+
 
         System.out.println(ZonedDateTime.now());
         Registry.register(Registries.ITEM, new Identifier("tutorial", "custom_item"), CUSTOM_ITEM);
