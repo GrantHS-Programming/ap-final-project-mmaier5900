@@ -36,6 +36,7 @@ public class Work implements ModInitializer {
                 //.lightWithFluid(Fluids.WATER)
                 .destDimID(new Identifier("tutorial", "dimension"))
                 .tintColor(138, 78, 78)
+                .flatPortal()
                 .registerPortal();
 
 
