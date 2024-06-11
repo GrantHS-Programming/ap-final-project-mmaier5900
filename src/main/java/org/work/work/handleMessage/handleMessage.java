@@ -1,17 +1,11 @@
 package org.work.work.handleMessage;
 
-import ca.weblite.objc.Message;
+
 import com.mojang.authlib.GameProfile;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.network.message.MessageType;
 import net.minecraft.network.message.SignedMessage;
-import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
-import net.minecraft.text.TextContent;
-import net.minecraft.text.TranslatableTextContent;
-import org.spongepowered.asm.mixin.Mutable;
-
-import java.util.Arrays;
 
 public class handleMessage {
     public static void handleMessage(Text message) {
