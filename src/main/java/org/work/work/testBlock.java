@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.List;
 
-public class testBlock implements ModInitializer, testBlock2 {
+public class testBlock implements ModInitializer {
     public static final Block FIRST_BLOCK = new Block(AbstractBlock.Settings.create().strength(4.0f).requiresTool());
     @Override
     public void appendTooltip(ItemStack itemStack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
