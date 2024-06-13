@@ -1,0 +1,28 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "temperature_modifier": "frozen",
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 9408399,
+    "fog_color": 13619151,
+    "water_color": 9478075,
+    "water_fog_color": 4276568,
+    "grass_color": 8882055,
+    "foliage_color": 11442328
+  },
+  "spawners": {
+    "misc": [
+      {
+        "type": "minecraft:vindicator",
+        "weight": 1,
+        "minCount": 0,
+        "maxCount": 0
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

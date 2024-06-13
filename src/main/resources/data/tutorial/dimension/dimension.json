@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:badlands",
+          "biome": "tutorial:biometest",
           "parameters": {
             "temperature": -2,
             "humidity": -2,
